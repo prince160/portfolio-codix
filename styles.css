@@ -1,0 +1,587 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #350230;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    height: 100vh;
+    padding-top: 20px;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #ad009c;
+}
+.nav-link.active {
+    background-color: #ad009c;
+    color: white;
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s, background-color 0.3s;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #ad009c;
+}
+
+.social-icons a:hover {
+    color: #e775dc;
+    background-color: white;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    flex: 1;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+}
+/* Styles pour la section d'accueil */
+/* Styles pour la section d'accueil */
+.home {
+    background-color: #350230; /* Une couleur de fond pour mieux faire ressortir les formes */
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* Conteneur pour les formes */
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Styles pour chaque forme */
+.shape {
+    position: absolute;
+    opacity: 0.6;
+    background: linear-gradient(45deg, #ff7759, #f7846b);
+    animation: moveShapes 10s infinite ease-in-out; /* Vitesse d'animation augmentée */
+}
+
+/* Formes différentes */
+.shape1 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Cercle */
+    top: 10%;
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.shape2 {
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    left: 50%;
+    background: linear-gradient(45deg, #f7846b, #ff7759); /* Inversion de couleurs */
+    animation-delay: 2s;
+}
+
+.shape3 {
+    width: 200px;
+    height: 200px; /* Cercle */
+    border-radius: 50%; /* Cercle */
+    top: 30%;
+    left: 80%;
+    background: linear-gradient(45deg, #ff7759, #ff7759);
+    animation-delay: 4s;
+}
+
+.shape4 {
+    width: 120px;
+    height: 120px;
+    top: 80%;
+    left: 30%;
+    background: linear-gradient(45deg, #ff7759, #f7846b);
+    animation-delay: 6s;
+    transform: rotate(45deg); /* Losange */
+}
+
+.shape5 {
+    width: 180px;
+    height: 180px;
+    top: 50%;
+    left: 70%;
+    border-radius: 0; /* Carré */
+    animation-delay: 8s;
+}
+
+.shape6 {
+    width: 150px;
+    height: 75px; /* Rectangle plus petit */
+    top: 20%;
+    left: 10%;
+    background: linear-gradient(45deg, #f7846b, #f7846b);
+    animation-delay: 1s;
+}
+
+.shape7 {
+    width: 130px;
+    height: 130px;
+    top: 70%;
+    left: 60%;
+    border-radius: 50%; /* Cercle */
+    background: linear-gradient(45deg, #f7846b, #ff7759);
+    animation-delay: 3s;
+}
+
+.shape8 {
+    width: 100px;
+    height: 100px;
+    top: 40%;
+    left: 5%; /* Nouveau carré ajouté à gauche */
+    border-radius: 0; /* Carré */
+    background: linear-gradient(45deg, #f7846b, #ff7759);
+    animation-delay: 5s;
+}
+
+/* Animation pour les formes */
+@keyframes moveShapes {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-30px) rotate(45deg);
+    }
+}
+
+/* Styles pour l'overlay de texte */
+.overlay {
+    color: white;
+    padding: 10px;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Bouton d'appel à l'action */
+.cta-button {
+    background-color: #ff7759;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f7846b;
+}
+
+/* CSS SECTION A PROPOS  */
+.about {
+    background: linear-gradient(to right, #d14ec4, #ad009c);
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.about-intro {
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.founder {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    position: relative;
+}
+
+.founder-image {
+    position: relative;
+}
+
+.founder-circle {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #ff7759;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+    animation: pulse 2s infinite;
+}
+
+.founder-circle img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+}
+
+.founder-info {
+    max-width: 600px;
+    text-align: left;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.value-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.value-item i {
+    font-size: 40px;
+    color: #ff7759;
+    margin-bottom: 10px;
+}
+
+.value-item:hover {
+    background-color: #f1c40f;
+    color: white;
+}
+
+.team {
+    margin-top: 30px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: scale(1.1);
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    color: white;
+}
+
+.team-member span {
+    font-size: 14px;
+    color: #ecf0f1;
+}
+
+.separator {
+    width: 80%;
+    height: 1px;
+    background-color: #ecf0f1;
+    margin: 50px auto;
+    opacity: 0.5;
+}
+
+/* CSS SECTION REALISATIONS */
+/* CSS SECTION REALISATIONS - Version améliorée */
+.projects-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.project-item {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.projects{
+    background-color: #fdf3fc;
+}
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.project-image {
+    flex: 1;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    color: #ad009c;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin: 10px 0;
+    max-width: 600px;
+}
+
+.visit-button {
+    background-color: #ff7759;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.visit-button:hover {
+    background-color: #f7846b;
+}
+
+/* Alignement alterné */
+.project-right .project-content {
+    flex-direction: row-reverse;
+}
+
+.project-left .project-content {
+    flex-direction: row;
+}
+/* CSS pour les modals */
+.modal {
+    display: none; /* Cacher le modal par défaut */
+    position: fixed;
+    z-index: 1000; /* Pour s'assurer que le modal soit au-dessus des autres éléments */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permettre le défilement si le contenu est trop grand */
+    background-color: rgba(0, 0, 0, 0.8); /* Arrière-plan semi-transparent */
+}
+
+.modal-content {
+    margin: 15% auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #ff7759;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* SECTION CONTACT */
+.contact {
+background-color: #fdf3fc;
+    background-size: cover;
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ad009c;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #bbb7b7;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.contact-info, .contact-form {
+    background: #ad009c;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h3, .contact-form h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.contact-info p, .contact-info a {
+    text-decoration: none;
+    color: #dddddd;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+    color: #333;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background-color: #ff7759;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #f7846b;
+}
+
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #ad009c;
+    font-size: 14px;
+}
