@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Codix Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="img/fac.png" rel="icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="img/log.png" alt="Codix Logo">
+            </div>
+            <ul>
+                <li><a href="#home" class="menu-item">Accueil</a></li>
+                <li><a href="#about" class="menu-item">À propos</a></li>
+                <li><a href="#projects" class="menu-item">Réalisations</a></li>
+                <li><a href="#contact" class="menu-item">Contact</a></li>
+            </ul>
+            <div class="social-icons">
+                <a target="_blank" href="https://www.facebook.com/people/CodiX/100089360660563/"><i class="fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/codix_ga/"><i class="fab fa-instagram"></i></a>
+                <a target="_blank" href="https://wa.me/24177669241"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>
+        <main class="content">
+            <section id="home" class="section home">
+                <div class="background-shapes">
+                    <div class="shape shape1"></div>
+                    <!-- <div class="shape shape2"></div> -->
+                    <div class="shape shape3"></div>
+                    <div class="shape shape4"></div>
+                    <div class="shape shape5"></div>
+                    <!-- <div class="shape shape6"></div> -->
+                    <!-- <div class="shape shape7"></div> -->
+                    <div class="shape shape8"></div> <!-- Nouveau carré -->
+                </div>
+                <div class="overlay">
+                    <h1 style="font-size: 40px; color: #ad009c;">Portfolio de CodiX</h1>
+                    <p>Notre agence se spécialise dans la transformation numérique pour les particuliers et les TPE. 
+                        Nous concevons des sites web, des applications mobiles, configurons des e-mails professionnels, 
+                        des CRM, et d'autres outils pour vous aider à prospérer dans le monde numérique.</p>
+                    <a target="_blank" href="https://codix-ga.com"><button class="cta-button">Visiter notre site internet</button></a>
+                </div>
+            </section>
+            
+            
+            <section id="about" class="section about">
+                <div class="about-intro">
+                    <h2 style="color: #ad009c;">À propos de Codix</h2>
+                    <p>Codix est une agence gabonaise dédiée à la valorisation des talents locaux et à l'accompagnement des entreprises dans leur transformation numérique. Notre objectif est de créer un impact durable dans la société gabonaise en intégrant les technologies modernes au service du développement économique et social. Nous croyons fermement que chaque entreprise, petite ou grande, mérite de prospérer à l'ère du numérique.</p>
+                </div>
+            
+                <div class="founder">
+                    <div class="founder-image">
+                        <div class="founder-circle">
+                            <img src="img/pp.png" alt="Prince-Jeese MOUNANGA">
+                        </div>
+                    </div>
+                    <div class="founder-info">
+                        <h3 style="color: #ad009c;">Prince-Jeese MOUNANGA A'MATEBA</h3>
+                        <p style="text-align: justify;">Fondée par Prince-Jeese MOUNANGA A'MATEBA, un étudiant gabonais en France, titulaire d'un bac +2 en développement web et d'un bachelor en administration systèmes et réseaux informatique, CodiX est née d'une vision claire : mettre les compétences acquises au service de la population gabonaise. Actuellement, Prince-Jeese poursuit un master 2 en gestion de projet informatique, consolidant ainsi son expertise et sa capacité à mener des projets de grande envergure.</p>
+                    </div>
+                </div>
+            
+                <div class="values">
+                    <div class="value-item">
+                        <i class="fas fa-bullseye"></i>
+                        <h4>Innovation</h4>
+                        <p>Nous croyons en l'innovation continue pour offrir des solutions modernes et adaptées aux besoins de nos clients. L'innovation est au cœur de notre processus de création.</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h4>Communauté</h4>
+                        <p>Nous valorisons les talents locaux et collaborons avec des professionnels gabonais pour renforcer notre communauté. Ensemble, nous construisons un avenir numérique pour le Gabon.</p>
+                    </div>
+                </div>
+            
+                <div class="team"><br><br>
+                    <!-- <h3 style="text-align: center;">Équipe permanente :</h3><br> -->
+                    <div class="team-members">
+                        <div class="team-member">
+                            <img src="img/pp.png" alt="Développeur 1">
+                            <p>Prince<br><span>Chef de projet, Full Stack Developer</span></p>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/p.png" alt="Développeur 2">
+                            <p>Johny<br><span>Consultant en CyberSécurité</span></p>
+                        </div>
+                        <div class="team-member">
+                            <img src="img/ash.jpeg" alt="Développeur 3">
+                            <p>Ashley<br><span>Infrastructure, réseaux</span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="projects" class="section projects">
+                <h2 style="color: #ad009c; text-align: center;">Nos Réalisations</h2>
+                <p style="text-align: center;">Découvrez les projets que nous avons réalisés pour nos clients.</p>
+                <div class="projects-grid">
+                    <!-- Projet 1 -->
+                    <div class="project-item project-left">
+                        <div class="project-image">
+                            <img src="img/projet/as.PNG" alt="Projet 1" onclick="openModal('modal1')">
+                        </div>
+                        <div class="project-info">
+                            <h3>AS Location, Libreville</h3>
+                            <p>Pour AS Location, une agence de location de voitures, nous avons créé un site web interactif permettant la gestion facile des réservations et la présentation des véhicules. Le site, développé avec HTML5, CSS3 et JavaScript pour l'interface utilisateur, est soutenu par un backend en PHP et MySQL pour la gestion des données. Il comprend des outils d'analyse pour suivre les performances et des fonctionnalités SEO pour améliorer la visibilité.</p>
+                            <a target="_blank" href="https://www.codix-ga.com/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                    <!-- Projet 2 -->
+                    <div class="project-item project-right">
+                        <div class="project-image">
+                            <img src="img/projet/adoro.PNG" alt="Projet 2" onclick="openModal('modal2')">
+                        </div>
+                        <div class="project-info">
+                            <h3>Adoro Transfert, Paris</h3>
+                            <p>Adoro Transfert est une application web adaptable aux mobiles développée pour faciliter les transferts d'argent entre la France et le Gabon. Conçue avec React Native, l'application permet de simuler des transferts d'argent ainsi observer le différents frais associés. Nous avons intégré des mesures de sécurité avancées pour assurer la protection des fonctionnalités.</p>
+                            <a target="_blank" href="https://adorotransfert.com/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                    <!-- Projet 3 -->
+                    <div class="project-item project-left">
+                        <div class="project-image">
+                            <img src="img/projet/codix.PNG" alt="Projet 3" onclick="openModal('modal3')">
+                        </div>
+                        <div class="project-info">
+                            <h3>CodiX, Libreville</h3>
+                            <p>CodiX, une agence de transformation numérique, a bénéficié d'un site web moderne conçu de zero. Le site offre des informations sur les produits et services, un portfolio, et des fonctionnalités de collaboration en ligne. Le projet a mis en évidence la nécessité d'une stratégie de contenu solide et d'une interface utilisateur flexible.</p>
+                            <a target="_blank" href="https://codix-ga.com/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                    <!-- Projet 4 -->
+                    <div class="project-item project-right">
+                        <div class="project-image">
+                            <img src="img/projet/mawa.PNG" alt="Projet 4" onclick="openModal('modal4')">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mawakin, Montpellier</h3>
+                            <p>Pour Mawakin, une artiste peintre renommée dans le sud de France, nous avons conçu un site web pour présenter ses œuvres. Le site comprend des sections dédiées aux œuvres en noir et blanc, en couleur, une biographie de l'artiste, et un calendrier des événements. Ce projet met en avant l'originalité et la diversité des œuvres de Mawakin, tout en facilitant l'engagement avec son public.</p>
+                            <a target="_blank" href="https://mawakin.fr/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                    <!-- Projet 5 -->
+                    <div class="project-item project-left">
+                        <div class="project-image">
+                            <img src="img/projet/sb.PNG" alt="Projet 5" onclick="openModal('modal5')">
+                        </div>
+                        <div class="project-info">
+                            <h3>ScholarBridge, Libreville</h3>
+                            <p>ScholarBridge aide les étudiants gabonais à poursuivre leur études en France. Nous avons développé un site web avec Bootstrapp, intégrant des informations sur les programmes d'études, les procédures de visa, et les bourses. Le site propose également des consultations en ligne pour soutenir les étudiants dans leur démarche.</p>
+                            <a target="_blank" href="https://scholarbridge.org/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                    <!-- Projet 6 -->
+                    <div class="project-item project-right">
+                        <div class="project-image">
+                            <img src="img/projet/rf.png" alt="Repair Factory, Montpellier" onclick="openModal('modal6')">
+                        </div>
+                        <div class="project-info">
+                            <h3>Repair Factory, Montpellier</h3>
+                            <p>Pour Repair Factory, nous avons créé un site web dynamique qui met en avant leurs services de réparation de téléphones et leur gamme d'accessoires multimédia. Le site est conçu pour faciliter la prise de contact et inclut des fonctionnalités telles que la réservation en ligne pour les réparations, ainsi qu'une présentation des produits disponibles en magasin.</p>
+                            <a target="_blank" href="https://prince160.github.io/repairfactory/"><button class="visit-button">Visiter</button></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            
+            <!-- Modals pour les images -->
+            <div id="modal1" class="modal">
+                <span class="close" onclick="closeModal('modal1')">&times;</span>
+                <img class="modal-content" src="img/projet/as.PNG" alt="Projet 1">
+            </div>
+            <div id="modal2" class="modal">
+                <span class="close" onclick="closeModal('modal2')">&times;</span>
+                <img class="modal-content" src="img/projet/adoro.PNG" alt="Projet 2">
+            </div>
+            <div id="modal3" class="modal">
+                <span class="close" onclick="closeModal('modal3')">&times;</span>
+                <img class="modal-content" src="img/projet/codix.PNG" alt="Projet 3">
+            </div>
+            <div id="modal4" class="modal">
+                <span class="close" onclick="closeModal('modal4')">&times;</span>
+                <img class="modal-content" src="img/projet/mawa.PNG" alt="Projet 4">
+            </div>
+            <div id="modal5" class="modal">
+                <span class="close" onclick="closeModal('modal5')">&times;</span>
+                <img class="modal-content" src="img/projet/sb.PNG" alt="Projet 5">
+            </div>
+            <div id="modal6" class="modal">
+                <span class="close" onclick="closeModal('modal6')">&times;</span>
+                <img class="modal-content" src="img/projet/rf.png" alt="Projet 6">
+            </div>
+            
+            
+            <section id="contact" class="section contact">
+                <h2>Contactez-nous</h2>
+                <p>Nous serions ravis de discuter de vos projets. N'hésitez pas à nous contacter via les informations ci-dessous.</p>
+                
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Nos Coordonnées</h3>
+                        <p><strong>Adresse :</strong><br> 123 Rue de l'Innovation, 34000 Montpellier, France</p>
+                        <p><strong>Téléphone :</strong><a href="tel:+33753865449"> +33 7 53 86 54 49</a></p>
+                        <p><strong>Whatsapp :</strong><a href="https://wa.me/24177669241"> +241 077 66 92 41</a></p>
+
+                        <p><strong>Email :</strong> <a href="mailto:contact@codix-ga.com">contact@codix-ga.com</a></p>
+                    </div>
+                    
+                    <!-- <div class="contact-form">
+                        <h3>Envoyez-nous un message</h3>
+                        <form>
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                            <input type="email" name="email" placeholder="Votre email" required>
+                            <textarea name="message" placeholder="Votre message" required></textarea>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div> -->
+                </div>
+            </section>
+
+            <div class="footer">
+                <p>&copy; 2024 Portfolio - CodiX. Tous droits réservés.</p>
+            </div>
+            
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script src="//code.tidio.co/hadwyvqokkuczwhvhgssispsmvlmjufu.js" async></script>
+</body>
+</html>
